@@ -12,7 +12,7 @@ public class WebDriverTest {
         driver.get("https://www.avatrade.ru/");
         //log in
         Thread.sleep(5000);
-        WebElement searchInput = driver.findElement(By.cssSelector("#top-bar-menu > div.CreateAccount.top-bar-right.show-for-medium > div.wrapper-login > div > span"));
+        WebElement searchInput = driver.findElement(By.cssSelector("#top-bar-menu > div.CreateAccount.top-bar-right.show-for-medium > div.wrapper-login > div"));
         searchInput.click();
         //input email
         Thread.sleep(5000);
@@ -56,5 +56,6 @@ public class WebDriverTest {
         //open sdelki
         searchInput = driver.findElement(By.cssSelector("li.aside_item__2xlHs:nth-child(3) > a:nth-child(1)"));
         searchInput.click();
+        driver.quit();
     }
 }
