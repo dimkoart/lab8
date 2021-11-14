@@ -37,29 +37,27 @@ public class WebDriverTest {
         searchInput.click();
         Thread.sleep(10000);
         //take demo version
-        searchInput = driver.findElement(By.cssSelector("a.menu-list-item_container__3R8F7:nth-child(9) > span:nth-child(2) > span:nth-child(1)"));
+        searchInput = driver.findElement(By.cssSelector(".menu_listItemLink_bordered__-DkmR"));
         searchInput.click();
         Thread.sleep(10000);
         //crypto categories
-        searchInput = driver.findElement(By.cssSelector("a.categories_link__3tp-F:nth-child(14)"));
+        searchInput = driver.findElement(By.cssSelector(".categories_select__2fZ-8"));
         searchInput.click();
         Thread.sleep(10000);
         //sell
-        searchInput = driver.findElement(By.cssSelector("tr.watchlist-entity\\.component_row__2xsrx:nth-child(1) > td:nth-child(4) > div:nth-child(1) > div:nth-child(1)"));
+        searchInput = driver.findElement(By.cssSelector("option.categories_option__l305Z:nth-child(20)"));
         searchInput.click();
         Thread.sleep(10000);
         //take number of sell
-        searchInput = driver.findElement(By.cssSelector(".order-entry-panel_amountStepper__1U2lg > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > input:nth-child(1)"));
-        searchInput.sendKeys("");
-        Thread.sleep(10000);
-        searchInput.sendKeys("10");
+        searchInput = driver.findElement(By.cssSelector("tr.watchlist-entity\\.component_row__2gfNn:nth-child(1) > td:nth-child(2) > div:nth-child(1)"));
+        searchInput.click();
         Thread.sleep(10000);
         //press sell button
-        searchInput = driver.findElement(By.cssSelector(".button\\.child_container__2Gdpz"));
+        searchInput = driver.findElement(By.cssSelector(".button\\.children_container_burger__1l-wp"));
         searchInput.click();
         Thread.sleep(10000);
         //open sdelki
-        searchInput = driver.findElement(By.cssSelector("li.aside_item__2xlHs:nth-child(3) > a:nth-child(1)"));
+        searchInput = driver.findElement(By.cssSelector("li.menu_listItem__1JWUg:nth-child(4) > a:nth-child(1)"));
         searchInput.click();
         driver.quit();
     }
