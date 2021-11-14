@@ -31,9 +31,9 @@ public class WebDriverTest {
         //press loggin button
         searchInput = driver.findElement(By.cssSelector(".button-wrapper > button:nth-child(1)"));
         searchInput.click();
-        Thread.sleep(6000);
+        Thread.sleep(15000);
         //buuter menu
-        searchInput = driver.findElement(By.cssSelector(".button\\.children_container_burger__1l-wp"));
+        searchInput = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/header/div[1]/div[1]"));
         searchInput.click();
         Thread.sleep(6000);
         //take demo version
