@@ -12,7 +12,7 @@ public class WebDriverTest {
         driver.get("https://www.avatrade.ru/");
         //log in
         Thread.sleep(20000);
-        WebElement searchInput = driver.findElement(By.cssSelector("#top-bar-menu > div.CreateAccount.top-bar-right.show-for-medium > div.wrapper-login > div"));
+        WebElement searchInput = driver.findElement(By.cssSelector("div.log-in-desktop > span:nth-child(1)"));
         searchInput.click();
         //input email
         Thread.sleep(15000);
