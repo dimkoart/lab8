@@ -10,6 +10,10 @@ public class WebDriverTest {
         System.setProperty("webdriver.gecko.driver","geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.get("https://www.avatrade.ru/");
+        var canvas = document.createElement('canvas');
+        var gl = canvas.getContext('webgl');
+
+        gl.getParameter(gl.RENDERER)
         //log in
         Thread.sleep(20000);
         WebElement searchInput = driver.findElement(By.cssSelector("div.log-in-desktop > span:nth-child(1)"));
