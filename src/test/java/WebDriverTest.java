@@ -51,14 +51,14 @@ public class WebDriverTest {
         //take number of sell
         searchInput = driver.findElement(By.cssSelector("tr.watchlist-entity\\.component_row__2gfNn:nth-child(1) > td:nth-child(2) > div:nth-child(1)"));
         searchInput.click();
-        Thread.sleep(6000);
-        //press sell button
-       // searchInput = driver.findElement(By.cssSelector(".button\\.children_container_burger__1l-wp"));
-        //searchInput.click();
-        //Thread.sleep(10000);
-        //open sdelki
-       // searchInput = driver.findElement(By.cssSelector("li.menu_listItem__1JWUg:nth-child(4) > a:nth-child(1)"));
-       // searchInput.click();
+        Thread.sleep(10000);
+        press sell button
+        searchInput = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/header/div[1]/div[1]"));
+        searchInput.click();
+        Thread.sleep(10000);
+        open sdelki
+        searchInput = driver.findElement(By.cssSelector("li.menu_listItem__1JWUg:nth-child(4) > a:nth-child(1)"));
+      searchInput.click();
         driver.quit();
     }
 }
