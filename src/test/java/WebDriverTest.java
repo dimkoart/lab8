@@ -33,7 +33,7 @@ public class WebDriverTest {
         searchInput.click();
         Thread.sleep(10000);
         //buuter menu
-        searchInput = driver.findElement(By.cssSelector(".button\.children_container_burger__1l-wp"));
+        searchInput = driver.findElement(By.cssSelector(".button\\.children_container_burger__1l-wp"));
         searchInput.click();
         Thread.sleep(10000);
         //take demo version
