@@ -17,7 +17,7 @@ public class WebDriverTest {
         //log in
 
         Thread.sleep(20000);
-        WebElement searchInput = driver.findElement(By.xpath("/html/body/div[1]/div[1]/header/div/div[1]/div[2]/div/div[2]/div[1]/div[2]/div/span"));
+        WebElement searchInput = driver.findElement(By.xpath("/html/body/div[1]/div[1]/header/div/div[2]/div/div[2]/div[1]/div/span"));
         searchInput.click();
         //input email
         Thread.sleep(15000);
