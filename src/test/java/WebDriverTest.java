@@ -13,11 +13,12 @@ public class WebDriverTest {
         System.setProperty("webdriver.gecko.driver","geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.get("https://www.avatrade.ru/");
-       
+
         //log in
 
         Thread.sleep(20000);
         WebElement searchInput = driver.findElement(By.cssSelector("div.log-in-desktop > span:nth-child(1)"));
+        Thread.sleep(20000);
         searchInput.click();
         //input email
         Thread.sleep(15000);
