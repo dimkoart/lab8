@@ -53,7 +53,7 @@ public class WebDriverTest {
         searchInput.click();
         Thread.sleep(10000);
       //  press sell button
-        searchInput = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/header/div[1]/div[1]"));
+        searchInput = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/header/div[1]"));
         searchInput.click();
         Thread.sleep(10000);
         //open sdelki
